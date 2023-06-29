@@ -26,8 +26,7 @@ for (let i = 1; i <= 100; i++) {
   }
 }
 
-// ? Wild Wild Life -
-
+// ? Wild Wild Life - Instructions below
 //? Change Wolfy's hometown from "Yukon Territory" to "Gotham City".
 //? Plantee just had her birthday; change Plantee's array to reflect her being a year older.
 //? Porgee decides that Wolfy can't be named "Wolfy" anymore. Remove "Wolfy" from the wolfy array and replace it with "Gameboy".
@@ -50,4 +49,13 @@ const dart = ["D'Art", "Demogorgan Dog", 2, "Upside Down"];
 dart.push("Hawkins");
 console.log(dart);
 
+// ? Yell at the Ninja Turtles
+// ? Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo).
+// ? Use a for of loop to call toUpperCase() on each of them and print out the result.
 
+let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+for (let turtle of ninjaTurtles) {
+  let uppercaseName = turtle.toUpperCase();
+  console.log(uppercaseName);
+}
