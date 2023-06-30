@@ -32,23 +32,23 @@
 //? Porgee decides that Wolfy can't be named "Wolfy" anymore. Remove "Wolfy" from the wolfy array and replace it with "Gameboy".
 //? Give Dart a second hometown by adding "Hawkins"
 
-const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"];
-wolfy.splice(3, 1, "Gotham City");
-wolfy.splice(0, 1, "Gameboy");
-console.log(wolfy);
+// const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"];
+// wolfy.splice(3, 1, "Gotham City");
+// wolfy.splice(0, 1, "Gameboy");
+// console.log(wolfy);
 
-const sharky = ["Sharky", "shark", 20, "Left Coast"];
+// const sharky = ["Sharky", "shark", 20, "Left Coast"];
 
-const plantee = ["Plantee", "plant", 5000, "Mordor"];
-// plantee[2] = "5001";
-plantee.splice(2, 1, "5001");
-console.log(plantee);
+// const plantee = ["Plantee", "plant", 5000, "Mordor"];
+// // plantee[2] = "5001";
+// plantee.splice(2, 1, "5001");
+// console.log(plantee);
 
-const porgee = ["Porgee", "Porg", 186, "Ahch-To"];
+// const porgee = ["Porgee", "Porg", 186, "Ahch-To"];
 
-const dart = ["Dart", "Demogorgan Dog", 2, "Upside Down"];
-dart.push("Hawkins");
-console.log(dart);
+// const dart = ["Dart", "Demogorgan Dog", 2, "Upside Down"];
+// dart.push("Hawkins");
+// console.log(dart);
 
 // ? Yell at the Ninja Turtles
 // ? Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo).
@@ -60,3 +60,30 @@ console.log(dart);
 //   let uppercaseName = turtle.toUpperCase();
 //   console.log(uppercaseName);
 // }
+
+// ? Methods Revisited - too many damn steps look at the link
+const favMovies = [
+  "Jaws",
+  "The Fellowship of the Ring",
+  "Howl's Moving Castle",
+  "Django Unchained",
+  "Cloud Atlas",
+  "The Usual Suspects",
+  "Toy Story",
+  "Conan the Barbarian",
+  "Titanic",
+  "Harry Potter",
+  "Fried Green Tomatoes",
+  "Volver",
+  "Oculus",
+  "Seven",
+  "Black Panther",
+  "Harry Potter",
+  "Imitation of Life",
+  "Snatch",
+  "Fast and Furious",
+];
+console.log(favMovies[8]);       // console.logs "Titanic" which is the 8th item in the index
+console.log(favMovies.sort());  // sorts the items alphabetically
+favMovies.pop();               // removes the last item from the array, which was "Volver" after being sorted
+console.log(favMovies);      
