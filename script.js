@@ -30,20 +30,25 @@
 //? Change Wolfy's hometown from "Yukon Territory" to "Gotham City".
 //? Plantee just had her birthday; change Plantee's array to reflect her being a year older.
 //? Porgee decides that Wolfy can't be named "Wolfy" anymore. Remove "Wolfy" from the wolfy array and replace it with "Gameboy".
-//? Give D'Art a second hometown by adding "Hawkins"
+//? Give Dart a second hometown by adding "Hawkins"
 
 const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"];
+wolfy.splice(3, 1, "Gotham City");
+wolfy.splice(0, 1, "Gameboy");
+console.log(wolfy);
 
 const sharky = ["Sharky", "shark", 20, "Left Coast"];
 
 const plantee = ["Plantee", "plant", 5000, "Mordor"];
-plantee[2] = "5001";
+// plantee[2] = "5001";
+plantee.splice(2, 1, "5001");
 console.log(plantee);
 
 const porgee = ["Porgee", "Porg", 186, "Ahch-To"];
 
-const dart = ["D'Art", "Demogorgan Dog", 2, "Upside Down"];
-
+const dart = ["Dart", "Demogorgan Dog", 2, "Upside Down"];
+dart.push("Hawkins");
+console.log(dart);
 
 // ? Yell at the Ninja Turtles
 // ? Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo).
