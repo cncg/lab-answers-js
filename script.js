@@ -121,8 +121,11 @@ const whereIsWaldo = [
   ["Petunia", ["Baked Goods", "Waldo"]],
 ];
 
-console.log(whereIsWaldo[1]);
-let index= 1;
-whereIsWaldo.splice(index,1)
+console.log(whereIsWaldo[1]); // finding eggbert
+let index = 1;
+whereIsWaldo.splice(index, 1); // i found this solution online but gonna lie but i don't really understand how it works :)
+
+whereIsWaldo[1][2] = "No One"; // change the name of the element to a new name
+
+console.log(whereIsWaldo[2][1][1]); // finding waldo, and console logging him :)
 console.table(whereIsWaldo);
-// i found this solution online but gonna lie but i dont really understand how it works :)
