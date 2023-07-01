@@ -40,8 +40,7 @@
 // const sharky = ["Sharky", "shark", 20, "Left Coast"];
 
 // const plantee = ["Plantee", "plant", 5000, "Mordor"];
-// // plantee[2] = "5001";
-// plantee.splice(2, 1, "5001");
+// plantee[2] = "5001";
 // console.log(plantee);
 
 // const porgee = ["Porgee", "Porg", 186, "Ahch-To"];
@@ -54,12 +53,12 @@
 // ? Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo).
 // ? Use a for of loop to call toUpperCase() on each of them and print out the result.
 
-// let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
-// for (let turtle of ninjaTurtles) {
-//   let uppercaseName = turtle.toUpperCase();
-//   console.log(uppercaseName);
-// }
+for (let turtle of ninjaTurtles) {
+  let uppercaseName = turtle.toUpperCase();
+  console.log(uppercaseName);
+}
 
 // ? Methods Revisited - too many damn steps look at the link
 const favMovies = [
@@ -83,7 +82,26 @@ const favMovies = [
   "Snatch",
   "Fast and Furious",
 ];
-console.log(favMovies[8]);       // console.logs "Titanic" which is the 8th item in the index
-console.log(favMovies.sort());  // sorts the items alphabetically
-favMovies.pop();               // removes the last item from the array, which was "Volver" after being sorted
-console.log(favMovies);      
+console.log(favMovies[8]); // console.logs "Titanic" which is the 8th item in the index
+
+favMovies.sort(); // sorts the items alphabetically
+
+favMovies.pop(); // removes the last item from the array, which was "Volver" after being sorted
+
+favMovies.push("Guardians of the Galaxy"); // add a new element to the end of the array
+
+favMovies.reverse(); // reverses the array
+
+const deletedElement = favMovies.shift(); // removes the first element from an array and returns it, changes the length
+console.log(deletedElement);
+
+favMovies.unshift("Inception"); // add an element to the beginning of the array
+
+favMovies.splice(15, 1, "Avatar"); // change the element in index 15 to a new element
+
+const halfOfMovies = favMovies.slice(Math.floor(favMovies.length / 2)); // slice the last half of the array , and storing that in a variable, then logging it
+console.table(halfOfMovies);
+
+console.log(favMovies[14]); // console log the index of fast and furious
+
+console.table(favMovies);
